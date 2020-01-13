@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"In order to search Aviva in Google","Search 'Aviva' on Google search Page and verify the 3rd link.","SUCCESS","2020-01-13T01:01:34.8347635+05:30[Asia/Calcutta]","0.0","33.99"
+"In order to search Aviva in Google","User submit 'Pay Premium' with out providing Policy Number and Date of birth on Aviva INDIA and Validate the Error","SUCCESS","2020-01-13T01:02:08.8230345+05:30[Asia/Calcutta]","0.0","30.06"

@@ -1,0 +1,174 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 17,
+        "name": "Search \u0027Aviva\u0027 on Google search Page and verify the 3rd link.",
+        "description": "",
+        "id": "in-order-to-search-aviva-in-google;search--aviva--on-google-search-page-and-verify-the-3rd-link.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10035843399,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the User is on Google search Page",
+            "match": {
+              "location": "GoogleStepDfns.theUserisonGooglesearhPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6127614000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the User Enters \u0027Aviva\u0027 in search bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Aviva",
+                  "offset": 17
+                }
+              ],
+              "location": "GoogleStepDfns.theUserEntersAvivainsearchbar(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2796407100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user clicks on search button",
+            "match": {
+              "location": "GoogleStepDfns.theuserclicksonsearchbutton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 516322200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the User gets the links count on search page",
+            "match": {
+              "location": "GoogleStepDfns.theUsergetsthelinkscountonsearchpage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 649319801,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user prints the text of 3rd link in the search result",
+            "match": {
+              "location": "GoogleStepDfns.theuserprintsthetextof5thlinkinthesearchresult()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Scenario-1"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "User submit \u0027Pay Premium\u0027 with out providing Policy Number and Date of birth on Aviva INDIA and Validate the Error",
+        "description": "",
+        "id": "in-order-to-search-aviva-in-google;user-submit--pay-premium--with-out-providing-policy-number-and-date-of-birth-on-aviva-india-and-validate-the-error;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13659161301,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user is on Aviva India Page",
+            "match": {
+              "location": "AvivaStepDfns.theuserisonAvivaIndiaPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6070466900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the User Clicks on Existing User",
+            "match": {
+              "location": "AvivaStepDfns.theUserClicksonExistingUser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4685165001,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user clicks on pay premium",
+            "match": {
+              "location": "AvivaStepDfns.theuserclicksonpaypremium()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1456406800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user clicks on submit without entering policyNumber and Date of birth",
+            "match": {
+              "location": "AvivaStepDfns.userclicksonsubmitwithoutenteringpolicyNumberandDateofbirth()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 967416801,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user should see \u0027Please enter Policy Number, Date of Birth.\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Please enter Policy Number, Date of Birth.",
+                  "offset": 17
+                }
+              ],
+              "location": "AvivaStepDfns.usershouldseeerrorMsg(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Scenario-2"
+          }
+        ]
+      }
+    ],
+    "name": "In order to search Aviva in Google",
+    "description": "User search Aviva in google\nUser verifies the result links on return page\nUser navigates to AVIVA INDIA\nUser verifies error message for blank Policy Number and Date of Birth",
+    "id": "in-order-to-search-aviva-in-google",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/DemoScenarios.feature"
+  }
+]
